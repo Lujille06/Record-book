@@ -30,7 +30,7 @@ class Main {
 }
 
 //Generic class which is compatible with different data types
-class RecordBook<T extends Student, U> { //(T extends Student) ensures that it will always be a Student or subclass kinda like restriction
+class RecordBook<T extends Student, U> { //(T extends Student) ensures that it will always be a Student or subclass kinda like restriction, so we can safely call its methods
 	private LinkedHashMap<T, U> record = new LinkedHashMap<>();
     
   //add record
